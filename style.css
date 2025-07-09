@@ -31,7 +31,6 @@
 body {
   font-family: "Raleway", "Open Sans", sans-serif;
   font-weight: var(--Weight-400);
-  color: var(--Desaturated-Blue);
   background-color: var(--Light-Grayish-Blue);
   line-height: 1.6;
 }
@@ -137,7 +136,7 @@ input::placeholder {
   width: 40%;
   padding: 0.85rem;
   font-size: 0.85rem;
-  color: var(--light-gray);
+  color: var(--Light-Gray);
 }
 
 /* button */
@@ -179,7 +178,7 @@ input::placeholder {
 }
 
 .team-text h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   white-space: nowrap;
   font-weight: var(--Weight-700);
 }
@@ -213,13 +212,14 @@ input::placeholder {
 .testimonial {
   width: 70%;
   margin-top: 2rem;
-  border: 1px solid var(--Light-Gray);
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 0.85rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .testimonial img {
@@ -384,4 +384,7 @@ input::placeholder {
 .icon-container i {
   font-size: 1.25rem;
   color: var(--Light-Grayish-Blue);
+}
+
+@media screen and (max-width: 40rem) {
 }
