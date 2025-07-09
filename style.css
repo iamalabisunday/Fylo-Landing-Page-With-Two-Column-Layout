@@ -147,8 +147,13 @@ input::placeholder {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  white-space: nowrap;
   color: var(--Light-Grayish-Blue);
   background-color: var(--Bright-Blue);
+}
+
+.cta-button:hover {
+  background-color: hsl(239, 47%, 74%);
 }
 
 /* Team Section */
@@ -192,6 +197,20 @@ input::placeholder {
   column-gap: 0.5rem;
   cursor: pointer;
   border-bottom: 1px solid var(--Moderate-Cyan);
+}
+
+.team-cta:hover {
+  color: hsl(170, 45%, 67%);
+  border-bottom: 1px solid hsl(170, 45%, 67%);
+}
+
+.team-cta:hover a {
+  color: hsl(170, 45%, 67%);
+}
+
+team-cta:hover img {
+  filter: invert(78%) sepia(14%) saturate(743%) hue-rotate(119deg)
+    brightness(95%) contrast(91%);
 }
 
 .team a {
@@ -358,6 +377,11 @@ input::placeholder {
   row-gap: 1rem;
 }
 
+.over:hover {
+  color: var(--Bright-Blue);
+  cursor: pointer;
+}
+
 .icon-text-content {
   display: flex;
   align-items: center;
@@ -389,6 +413,11 @@ input::placeholder {
   display: grid;
   place-items: center;
   cursor: pointer;
+}
+
+.icon-container:hover {
+  background-color: var(--Bright-Blue);
+  border: 1px solid var(--Bright-Blue);
 }
 
 .icon-container i {
